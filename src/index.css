@@ -1,13 +1,64 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(241, 239, 239);
+  margin: 0 19rem;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.homePage {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.home-img {
+  height: 15rem;
+  width: 37.4rem;
+}
+.news {
+  padding: 20px;
+  background: white;
+}
+@media screen and (max-width: 1480px) {
+  body {
+    margin: 0 15rem;
+  }
+}
+@media screen and (max-width: 1380px) {
+  body {
+    margin: 0 10rem;
+  }
+}
+@media screen and (max-width: 1180px) {
+  body {
+    margin: 0 5rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  body {
+    margin: 0 2rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  body {
+    margin: 0 2rem;
+  }
+  .homePage {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width: 661px) {
+  body {
+    margin: 0;
+  }
 }

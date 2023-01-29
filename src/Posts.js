@@ -2,6 +2,9 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import ListItem from './ListItem'
+import Navbar from "./Navbar";
+import './index.css'
+
 
 const Posts = () => {
   let [posts, setPosts] = useState([])
@@ -19,15 +22,18 @@ const Posts = () => {
 
   return (
     <div>
-      {posts.map((post,id) => {
-        return (
-        //   <div key={id}>
-        // <h1>{post.title}</h1>
-        // <p>{post.body}</p>
-        // <img src={post.image} alt={post.title} />
-        //   </div>
-        <ListItem key={id} post={post} />
-      )})}
+      <Navbar />
+      <div className='homePage'>
+        <div>
+          {posts.map((post,id) => {
+            return (
+                <ListItem key={id} post={post} />
+              )})}
+        </div>
+        <div className='news'>
+          <h2>Sign up to my newsletter</h2>
+        </div>
+      </div>
     </div>
   )
 }
